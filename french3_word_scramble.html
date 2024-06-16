@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Word Scramble Game | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_ws.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="french1_memory_game.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Memory</a>
+        <a href="french2_word_guessing_game.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Guess the word!</a>
+        <a href="french3_word_scramble.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Word scramble</a>
+        <a href="french4_quiz.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Grammar Quiz</a>
+        <a href="french5_hangman.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hangman</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="french1_memory_game.html" class="w3-bar-item w3-button w3-padding-large">Memory</a>
+        <a href="french2_word_guessing_game.html" class="w3-bar-item w3-button w3-padding-large">Guess the word!</a>
+        <a href="french3_word_scramble.html" class="w3-bar-item w3-button w3-padding-large">Word scramble</a>
+        <a href="french4_quiz.html" class="w3-bar-item w3-button w3-padding-large">Grammar Quiz</a>
+        <a href="french5_hangman.html" class="w3-bar-item w3-button w3-padding-large">Hangman</a>
+    </div>
+</div>
+
+<!-- Main content for Word Scramble Game -->
+<div class="container">
+    <h2>Word Scramble</h2>
+    <div class="content">
+        <p class="word"></p>
+        <div class="details">
+            <p class="hint">Hint: <span></span></p>
+            <p class="time">Time Left: <span><b>30</b>s</span></p>
+            <p class="score">Score: <b>0</b></p>
+        </div>
+        <input type="text" spellcheck="false" placeholder="Enter a valid word">
+        <div class="buttons">
+            <button class="refresh-word">Refresh Word</button>
+            <button class="check-word">Check Word</button>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="js/words.js" defer></script>
+<script src="js/script_ws.js" defer></script>
+
+<script>
+// Function to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
